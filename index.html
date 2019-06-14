@@ -1,0 +1,123 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	 <title>Web site</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+<link rel="stylesheet" href="css/style.css">
+<script type="text/javascript" src="javascript/script.js"></script>
+</head>
+
+	
+
+<body>
+
+ <!-- /. Header -->
+<header>
+		<div class="container-fluid NavBarBg" >
+			<nav class="navbar navbar-expand-lg navbar-light ">
+<img src=".\images\logo.png">
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Articles</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Services</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link " href="#">Contact</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+
+		</div>
+	</header>
+
+	 <!-- /. Fin Header -->
+
+
+ <!-- /. Abonnez  -->
+
+
+<div class="container-fluid">
+	<div class="row">
+		
+		<div class="col-sm-6">
+			<section class="newsletter">
+			<div class="container-fluid">
+		<h3>Abonnez pour découvrir les nouvelles articles</h3>
+	<div class="input-group">
+         <input type="email" class="form-control" id="Id_Abonnez" placeholder="Votre email">
+         <span class="input-group-btn">
+         <button class="btn" type="button" onclick="AbonnezTest()"> Abonnez </button>
+         </span>
+          </div>
+	</div>
+
+			</div>	
+			</section>
+ <!-- /. Fin  Abonnez  -->
+
+  <!-- /. Login  -->
+		<div class="col-sm-6">
+
+		 <div id="logreg-forms">
+        <form class="form-signin">
+            <h1 class="h3 mb-3 font-weight-normal" style="text-align: center">Connecter</h1>
+           
+           
+            <input type="email" id="inputEmail" class="form-control" placeholder="Email" required="" autofocus="">
+            <input type="password" id="inputPassword" class="form-control" placeholder="Mot de passe" required="">
+            
+            <button class="btn btn-success btn-block" onclick="ConnecterTester()" type="submit"><i class="fas fa-sign-in-alt" ></i> Connecter</button>
+            <h5 id="Mot_Passe_Incorrect"></h5>
+            <a href="#" id="forgot_pswd">Mot de passe oublier?</a>
+            <hr>
+            <!-- <p>Don't have an account!</p>  -->
+            <button class="btn btn-primary btn-block" type="button" id="btn-signup" onclick="signup()">Créer un compte</button>
+            </form>
+
+            <form action="/reset/password/" class="form-reset">
+                <input type="email" id="resetEmail" class="form-control" placeholder="Email address" required="" autofocus="">
+                <button class="btn btn-primary btn-block" type="submit">Récupérer Mot de passe</button>
+                <a href="#" id="cancel_reset"><i class="fas fa-angle-left"></i> Back</a>
+            </form>
+            
+            <form action="/signup/" class="form-signup">
+              
+                <input type="text" id="user-name" class="form-control" placeholder="Full name" required="" autofocus="">
+                <input type="email" id="user-email" class="form-control" placeholder="Email address" required autofocus="">
+                <input type="password" id="user-pass" class="form-control" placeholder="Password" required autofocus="">
+                <input type="password" id="user-repeatpass" class="form-control" placeholder="Repeat Password" required autofocus="">
+
+                <button class="btn btn-primary btn-block" type="submit"><i class="fas fa-user-plus"></i> Créer</button>
+                <a href="#" id="cancel_signup"><i class="fas fa-angle-left"></i> Back</a>
+            </form>
+            <br>
+            
+    </div>
+				</div>	
+	</div>	
+	<!-- /. Fin Login  -->
+</div>
+
+
+
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+</body>
+</html>
